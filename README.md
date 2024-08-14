@@ -12,29 +12,25 @@ The project progressed through the following key stages:
 ## Methodology
 
 1. **Data Acquisition**:
-   - Downloaded historical data for the S&P 500 index using the `yfinance` package and stored it in a CSV file.
-
-2. **Data Acquisition**:
-
    - Downloaded S&P 500 historical data using yfinance
    - Stored data in a CSV file for efficient access
 
-3. **Data Preprocessing**:
+2. **Data Preprocessing**:
 
    - Cleaned and prepared data using pandas
    - Created new features like "Tomorrow" price and "Target" (binary indicator for price increase)
 
-4. **Model Development**:
+3. **Model Development**:
 
    - Used RandomForestClassifier from scikit-learn
    - Trained on historical data excluding the most recent 100 days
 
-5. **Backtesting**:
+4. **Backtesting**:
 
    - Developed a custom backtesting function to simulate real-world trading scenarios
    - Used a sliding window approach to test the model on different time periods
 
-6. **Model Evaluation**:
+5. **Model Evaluation**:
 
    - Utilized precision score as the primary metric for model performance
 
